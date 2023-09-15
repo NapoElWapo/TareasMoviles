@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class ThirdPage extends StatefulWidget {
@@ -41,11 +39,5 @@ class _ThirdPageState extends State<ThirdPage> {
                 child: Text("(p≧w≦q)")),
           ],
         ));
-  }
-
-  void generarNumero() {
-    setState(() {
-      numeroAleatorio = Random().nextInt(200);
-    });
   }
 }

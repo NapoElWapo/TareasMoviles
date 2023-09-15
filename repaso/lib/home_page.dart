@@ -10,8 +10,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String? valorRetornadoPag2;
-  String? valorRetornadoPag3;
+  String valorRetornadoPag2 = " ";
+  String valorRetornadoPag3 = " ";
+  final _text = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +48,7 @@ class _HomePageState extends State<HomePage> {
                           return AlertDialog(
                             title: Text("Ingrese datos"),
                             content: TextField(
+                              controller: _text,
                               decoration: InputDecoration(
                                 hintText: "Ingrese palabra",
                               ),
@@ -61,16 +63,19 @@ class _HomePageState extends State<HomePage> {
                               ),
                               MaterialButton(
                                 onPressed: () async {
-                                  final variableRecibida =
-                                      await Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  SecondPage()));
+                                  if (_text.text.isEmpty) {
+                                  } else {
+                                    final variableRecibida =
+                                        await Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    SecondPage()));
 
-                                  setState(() {
-                                    valorRetornadoPag2 = variableRecibida;
-                                    Navigator.pop(context);
-                                  });
+                                    setState(() {
+                                      valorRetornadoPag2 = variableRecibida;
+                                      Navigator.pop(context);
+                                    });
+                                  }
                                 },
                                 child: Text("Aceptar"),
                               ),
