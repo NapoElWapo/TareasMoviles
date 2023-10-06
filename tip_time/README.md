@@ -1,16 +1,20 @@
-# tip_time
+# App Tip_Time
 
-A new Flutter project.
+* Uso de providers
 
-## Getting Started
+# Lo que me costo mas trabajo
+* En esta ocasión no hubo dificultades en el desarrollo mas que en saber si debes leer algo
+del provider una vez o si lo debes observar constantemente.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# Lo que aprendi
+* El uso correcto de providers
+* El uso de ListTiles
+* El uso de Radios
+* El uso de switch
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](images/captura1.png)
+![Screenshot](images/captura2.png)
+![Screenshot](images/captura3.png)
